@@ -1,0 +1,52 @@
+<html5>
+    <!-- Add Live Extension-->
+<head>
+    <!--<script src="algorithm.js"></script>-->
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <title> Cumulator </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header class="header">
+        <h1 class="Htext">The Cumulator</h1>
+    </header>
+<div class="TextBox">
+    <p>
+        The cumulator is an algorithm that demonstrates and visualizes the monetary damage that is resulted each time an adult man masturbates. 
+    </p>
+</div>
+
+<!-- Form -->
+<fieldset class="form-fieldset" name="JizzProf">
+  <legend class="legend">Your Outstanding Amount</legend>
+  <div class="form-group"> 
+        <label for="">Frequency: </label><input type="textbox" name="frequency"></input><br>
+        <label for="">Time: </label><input type="textbox" name="time"></input><br>
+        <button onClick="calculateProfit()">Calculate profit</button><br>
+
+
+        <label for="output">The profit is: </label><input type="textbox" name="output"></input>
+  </div>   
+</fieldset>
+</div>
+<!-- First 2 variables take the values from the users input, the rest is our original function-->
+<script type="text/javascript">
+    function calculateProfit() {
+
+    var Frequency = document.getElementsByName('frequency')[0].value;
+    var Time = document.getElementsByName('time')[0].value;
+    var CALC1 = parseFloat(Frequency) * 4;
+    var CALC2 = parseFloat(Time) * 52;
+    var CALC3 = CALC1 * CALC2;
+    var CALC4 = (CALC3/1000)/3.78;
+    var CALC5 = CALC4 * 190000;
+    var out = parseInt(CALC5);
+
+    document.getElementsByName('output')[0].value= out;
+
+    }
+</script>
+</body>
+</html5>

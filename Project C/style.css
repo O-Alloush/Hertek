@@ -1,0 +1,47 @@
+body{
+    margin: 0 auto;
+}
+
+
+
+header{
+    background-color: lightblue;
+    position: fixed;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    font-family: 'Tangerine', serif; 
+    font-size: 58px;
+}
+.TextBox{
+    background-color: lightblue;
+    display: float; 
+    width: 466px;
+    height: 200px;
+    border: 1px solid rgb(2, 2, 120);
+    box-sizing: border-box;
+    display: inline-block;
+    /*border-radius: 15px 50px 30px 5px;*/
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 3%;
+    word-wrap: break-word;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-fieldset{
+    position: absolute;
+    top: 220px;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+
+}
+.form-group{
+    top: 30%;
+}
